@@ -58,7 +58,6 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
             boolean enabled = Utils.isDozeEnabled(getActivity());
 
             updateSwitches(Utils.isDozeEnabled(getActivity()));
-            DozeReceiver.notifyChanged(getActivity());
         }
     };
 
